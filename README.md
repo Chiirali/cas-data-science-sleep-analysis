@@ -21,7 +21,7 @@ Dateien:
 
 
 ## Processing
-- Preprocessing aller 4 DataFrames
+- Grobes Preprocessing aller 4 DataFrames
 - Zusammenführen der DataFrames auf dem Attribut 'date'
 
 
