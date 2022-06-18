@@ -6,12 +6,16 @@
 **Mond Phasen**
 Abruf: 03.04.2022
 Quelle: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Händischer Download in ein CSV ohne Spalte Lunation und Duration
-Dateien: `raw/moon/*`
+Dateien: 
+- `raw/moon/*`
 
 **Schlafdaten**
 Abruf: 18.06.2022
 Quelle: Daten Export von Fitbit Schlafdaten von privatem Account, CSV Export
-Dateien: `raw/sleep/*` `raw/heart/*` `raw/temp/*`
+Dateien: 
+- `raw/sleep/*` 
+- `raw/heart/*` 
+- `raw/temp/*`
 
 
 ## Processing
