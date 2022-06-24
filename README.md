@@ -44,7 +44,7 @@ Dateien:
 
 ### Impact Moon
 
-The moon phases does not seem to have a significant influence on my sleep:
+The moon phases do not seem to have a significant influence on my sleep:
 
 ![moon](images/impact-moon.png)
 
