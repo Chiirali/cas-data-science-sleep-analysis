@@ -1,31 +1,30 @@
-# CAS Data Science Projekt Sleep Analysis - Data Wrangling
-
+# CAS Data Science Projekt Sleep Analysis
 
 ## Datenquellen
 
-**Mond Phasen**
+**Moon Phases**
 
-Abruf: 03.04.2022
-Quelle: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Händischer Download in ein CSV ohne Spalte Lunation und Duration
-Dateien: 
+date: 03.04.2022
+source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Händischer Download in ein CSV ohne Spalte Lunation und Duration
+files: 
 - `raw/moon/*`
 
-**Schlafdaten**
+**Sleep Data**
 
-Abruf: 18.06.2022
+date: 18.06.2022
 Quelle: Daten Export von Fitbit Schlafdaten von privatem Account, CSV Export
-Dateien: 
+files: 
 - `raw/sleep/*` 
 - `raw/heart/*` 
 - `raw/temp/*`
 
 
-## Processing
-- Grobes Preprocessing aller 4 DataFrames
-- Zusammenführen der DataFrames auf dem Attribut 'date'
+## Preprocessing
+- Cleaning and transformation of data
+- Merge data sets on attribute 'date'
 
 
-## Resultat nach Wrangling
+## Master DataFrame after preprocessing
 
 | date     | temperature | overall_score | composition_score | revitalization_score | duration_score | deep_sleep_in_minutes | resting_heart_rate | restlessness | bpm       | Moon Phase    |
 |----------|-------------|---------------|-------------------|----------------------|----------------|-----------------------|--------------------|--------------|-----------|---------------|
@@ -49,7 +48,11 @@ The moon phases do not seem to have a significant influence on my sleep:
 ![moon](images/impact-moon.png)
 
 
+
+-> first did some general preparation of the data for linear regression
+
 ### Linear Regression (Sklearn)
+
 
 **Sklearn Validation Set Measured vs Fitted**
 
