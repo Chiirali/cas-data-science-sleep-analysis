@@ -1,19 +1,19 @@
 # CAS Data Science Projekt Sleep Analysis
 
-## Datenquellen
+## Data Sources
 
 **Moon Phases**
 
-date: 03.04.2022
-source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Händischer Download in ein CSV ohne Spalte Lunation und Duration
-files: 
+Date: 03.04.2022
+Source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Manual download into a CSV without lunation and duration
+Files: 
 - `raw/moon/*`
 
 **Sleep Data**
 
-date: 18.06.2022
-Quelle: Daten Export von Fitbit Schlafdaten von privatem Account, CSV Export
-files: 
+Date: 18.06.2022
+Source: export of complete fitbit data of privat account
+Files: 
 - `raw/sleep/*` 
 - `raw/heart/*` 
 - `raw/temp/*`
