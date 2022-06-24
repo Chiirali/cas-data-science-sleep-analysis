@@ -39,3 +39,37 @@ Dateien:
 | 14.01.22 | -1.975761   | 77            | 21                | 20                   | 36             | 82                    | 59                 | 0.089701     | 68.562845 |               |
 | 09.06.22 | -2.748225   | 76            | 22                | 16                   | 38             | 88                    | 54                 | 0.07064      | 59.214786 | First Quarter |
 | 24.04.22 | -2.648158   | 68            | 16                | 15                   | 37             | 49                    | 54                 | 0.079038     | 76.126033 | Third Quarter |
+
+
+
+### Impact Moon
+
+The moon phases does not seem to have a significant influence on my sleep:
+
+![moon](images/impact_moon.png)
+
+
+### Linear Regression (Sklearn)
+
+**Sklearn Validation Set Measured vs Fitted**
+
+MSE: 10
+
+![validation](images/sklearn_validation.png)
+
+
+**Sklearn Test Set Measured vs Fitted**
+
+Test Set MSE: 4
+
+![test](images/sklearn_test.png)
+
+
+### Linear Regression (Statsmodels)
+
+MSE: 32.5
+
+![statsmodels](images/statsmodels.png)
+
+
+
