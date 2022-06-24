@@ -46,7 +46,7 @@ Dateien:
 
 The moon phases does not seem to have a significant influence on my sleep:
 
-![moon](images/impact_moon.png)
+![moon](images/impact-moon.png)
 
 
 ### Linear Regression (Sklearn)
