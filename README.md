@@ -7,7 +7,7 @@ Analyzed my personal sleep data from my Fitbit Charge 5 in combination with the 
 **Moon Phases**
 
 Date: 03.04.2022
-Source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Manual download into a CSV without lunation and duration: 
+Source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel):
 - `raw/moon/*`
 
 **Sleep Data**
