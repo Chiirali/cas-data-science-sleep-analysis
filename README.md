@@ -1,30 +1,32 @@
-# CAS Data Science Projekt Sleep Analysis
+# Sleep Analysis
+
+Analyzed my personal sleep data from my Fitbit Charge 5 in combination with the lunar phases.
 
 ## Data Sources
 
 **Moon Phases**
 
 Date: 03.04.2022
-Source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Manual download into a CSV without lunation and duration
-Files: 
+Source: `https://www.timeanddate.de/mond/phasen/` (Location: Basel). Manual download into a CSV without lunation and duration: 
 - `raw/moon/*`
 
 **Sleep Data**
 
 Date: 18.06.2022
 Source: export of complete fitbit data of privat account
-Files: 
+files: 
 - `raw/sleep/*` 
 - `raw/heart/*` 
 - `raw/temp/*`
 
 
-## Preprocessing
+## Data Wrangling
 - Cleaning and transformation of data
 - Merge data sets on attribute 'date'
 
 
-## Master DataFrame after preprocessing
+ Master DataFrame after preprocessing:
+
 | date     | skin_temp_avg | overall_score | composition_score | revitalization_score | duration_score | deep_sleep_in_minutes | resting_heart_rate | restlessness | avg_bpm   | Moon Phase    |
 |----------|---------------|---------------|-------------------|----------------------|----------------|-----------------------|--------------------|--------------|-----------|---------------|
 | 04.03.22 | 30.505155     | 67            | 17                | 15                   | 35             | 66                    | 60                 | 0.073479     | 66.494309 | New Moon      |
@@ -38,17 +40,20 @@ Files:
 | 09.06.22 | 30.251775     | 76            | 22                | 16                   | 38             | 88                    | 54                 | 0.07064      | 53.8481   | First Quarter |
 | 24.04.22 | 30.351842     | 68            | 16                | 15                   | 37             | 49                    | 54                 | 0.079038     | 68.521044 | Third Quarter |
 
-### Impact Moon
+## Data Analysis
 
-The moon phases do not seem to have a significant influence on my sleep:
+
+I looked at the distributions etc.
+Furthermore, the moon phases do not seem to have a significant influence on my sleep:
 
 ![moon](images/impact-moon.png)
 
 
+## Linear Regression
 
--> first did some general preparation of the data for linear regression
+-> some specific preprocessing for the algorithms (one hot encoding, shortening of column names, etc ...)
 
-### Linear Regression (Sklearn)
+### Sklearn
 
 
 **Sklearn Validation Set Measured vs Fitted**
@@ -65,7 +70,7 @@ Test Set MSE: 6.9
 ![test](images/sklearn_test.png)
 
 
-### Linear Regression (Statsmodels)
+###  Statsmodels
 
 MSE: 4.9
 
