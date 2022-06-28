@@ -53,21 +53,21 @@ The moon phases do not seem to have a significant influence on my sleep:
 
 **Sklearn Validation Set Measured vs Fitted**
 
-MSE: 10
+MSE: 5.1
 
 ![validation](images/sklearn_validation.png)
 
 
 **Sklearn Test Set Measured vs Fitted**
 
-Test Set MSE: 4
+Test Set MSE: 6.9
 
 ![test](images/sklearn_test.png)
 
 
 ### Linear Regression (Statsmodels)
 
-MSE: 32.5
+MSE: 4.9
 
 ![statsmodels](images/statsmodels.png)
 
