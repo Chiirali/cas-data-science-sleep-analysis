@@ -25,7 +25,7 @@ files:
 - Merge data sets on attribute 'date'
 
 
- Master DataFrame after preprocessing:
+ Snippet of the Master-DataFrame after wrangling:
 
 | date     | skin_temp_avg | overall_score | composition_score | revitalization_score | duration_score | deep_sleep_in_minutes | resting_heart_rate | restlessness | avg_bpm   | Moon Phase    |
 |----------|---------------|---------------|-------------------|----------------------|----------------|-----------------------|--------------------|--------------|-----------|---------------|
